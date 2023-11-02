@@ -14,6 +14,10 @@
 		7BE778052AF3759100BE47FA /* CoreDataiCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BE778032AF3759100BE47FA /* CoreDataiCloud.xcdatamodeld */; };
 		7BE778072AF3759200BE47FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE778062AF3759200BE47FA /* Assets.xcassets */; };
 		7BE7780A2AF3759200BE47FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE778082AF3759200BE47FA /* LaunchScreen.storyboard */; };
+		7BE778162AF375F900BE47FA /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE778152AF375F900BE47FA /* PersistenceService.swift */; };
+		7BE7781D2AF3778F00BE47FA /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7781B2AF3778F00BE47FA /* Item+CoreDataClass.swift */; };
+		7BE7781E2AF3778F00BE47FA /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7781C2AF3778F00BE47FA /* Item+CoreDataProperties.swift */; };
+		7BE778202AF3794F00BE47FA /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE7781F2AF3794F00BE47FA /* ViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		7BE778092AF3759200BE47FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BE7780B2AF3759200BE47FA /* CoreDataiCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataiCloud.entitlements; sourceTree = "<group>"; };
 		7BE7780C2AF3759200BE47FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE778152AF375F900BE47FA /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		7BE7781B2AF3778F00BE47FA /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BE7781C2AF3778F00BE47FA /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BE7781F2AF3794F00BE47FA /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +67,53 @@
 		7BE777F92AF3759100BE47FA /* CoreDataiCloud */ = {
 			isa = PBXGroup;
 			children = (
-				7BE777FA2AF3759100BE47FA /* AppDelegate.swift */,
-				7BE777FC2AF3759100BE47FA /* SceneDelegate.swift */,
-				7BE777FE2AF3759100BE47FA /* ViewController.swift */,
-				7BE778002AF3759100BE47FA /* Main.storyboard */,
-				7BE778062AF3759200BE47FA /* Assets.xcassets */,
-				7BE778082AF3759200BE47FA /* LaunchScreen.storyboard */,
-				7BE7780B2AF3759200BE47FA /* CoreDataiCloud.entitlements */,
 				7BE7780C2AF3759200BE47FA /* Info.plist */,
-				7BE778032AF3759100BE47FA /* CoreDataiCloud.xcdatamodeld */,
+				7BE7780B2AF3759200BE47FA /* CoreDataiCloud.entitlements */,
+				7BE778122AF375AB00BE47FA /* Others */,
+				7BE778132AF375B700BE47FA /* View */,
+				7BE778142AF375C100BE47FA /* Model */,
+				7BE778212AF3795600BE47FA /* View Model */,
 			);
 			path = CoreDataiCloud;
+			sourceTree = "<group>";
+		};
+		7BE778122AF375AB00BE47FA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				7BE777FA2AF3759100BE47FA /* AppDelegate.swift */,
+				7BE777FC2AF3759100BE47FA /* SceneDelegate.swift */,
+				7BE778062AF3759200BE47FA /* Assets.xcassets */,
+				7BE778152AF375F900BE47FA /* PersistenceService.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		7BE778132AF375B700BE47FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BE777FE2AF3759100BE47FA /* ViewController.swift */,
+				7BE778002AF3759100BE47FA /* Main.storyboard */,
+				7BE778082AF3759200BE47FA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BE778142AF375C100BE47FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7781B2AF3778F00BE47FA /* Item+CoreDataClass.swift */,
+				7BE7781C2AF3778F00BE47FA /* Item+CoreDataProperties.swift */,
+				7BE778032AF3759100BE47FA /* CoreDataiCloud.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BE778212AF3795600BE47FA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7781F2AF3794F00BE47FA /* ViewControllerViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE7781E2AF3778F00BE47FA /* Item+CoreDataProperties.swift in Sources */,
+				7BE7781D2AF3778F00BE47FA /* Item+CoreDataClass.swift in Sources */,
+				7BE778162AF375F900BE47FA /* PersistenceService.swift in Sources */,
+				7BE778202AF3794F00BE47FA /* ViewControllerViewModel.swift in Sources */,
 				7BE777FF2AF3759100BE47FA /* ViewController.swift in Sources */,
 				7BE777FB2AF3759100BE47FA /* AppDelegate.swift in Sources */,
 				7BE778052AF3759100BE47FA /* CoreDataiCloud.xcdatamodeld in Sources */,
